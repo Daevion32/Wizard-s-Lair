@@ -1,12 +1,8 @@
 <script setup>
-
+    
 </script>
-
 <template>
-
-    <main>
-        
-    </main>
+    <h1>aqui se veran los favoritos</h1>
 </template>
 
 <style scoped>
