@@ -13,6 +13,6 @@
   img{
     height: 70px;
     width: 70px;
-    margin-right:2vw;
+    
   }
 </style>

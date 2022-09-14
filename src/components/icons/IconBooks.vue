@@ -1,7 +1,7 @@
 <template>
 
   <div>
-    <img src="../../assets/book-stack.png" alt="Libros de Fantasia">
+    <img src="../../assets/bookshelf.png" alt="Libros de Fantasia">
   </div>
 
 </template>
