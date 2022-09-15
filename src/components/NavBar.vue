@@ -9,17 +9,17 @@ import { RouterLink } from "vue-router";
 <template>
         <div class="nav">
             <div class="Home">
-                <RouterLink to="/"><IconWizard />Home</RouterLink>
+                <RouterLink to="/"><IconWizard /><p class="btn btn-transparent">Home</p></RouterLink>
             </div>
                
             <div class="Views">
-                <RouterLink to="/cart"><IconCart />Cart</RouterLink>
+                <RouterLink to="/cart"><IconCart /><p class="btn btn-transparent" >Cart</p></RouterLink>
 
-                <RouterLink to="/favorites"><IconFavorites />Favorites</RouterLink>
+                <RouterLink to="/favorites"><IconFavorites /><p class="btn btn-transparent">Favorites</p></RouterLink>
 
-                <RouterLink to="/books"><IconBooks />FantasyBooks</RouterLink>
+                <RouterLink to="/books"><IconBooks /><p class="btn btn-transparent">FantasyBooks</p></RouterLink>
 
-                <RouterLink to="/rol"><IconDice />RolBooks</RouterLink>
+                <RouterLink to="/rol"><IconDice /><p class="btn btn-transparent">RolBooks</p></RouterLink>
             </div>      
         </div>
          
@@ -49,6 +49,11 @@ import { RouterLink } from "vue-router";
     align-items: center;
     top:3vh;
     left:4vw;
+    
+}
+.Home p{
+    color:white;
+
 }
 .Views{
     display: flex;
@@ -59,5 +64,10 @@ import { RouterLink } from "vue-router";
     position: absolute;
     right:3vw;
     top:2vh;
+    
+}
+.Views p{
+    color:white;
+    
 }
 </style>
