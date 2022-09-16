@@ -1,16 +1,16 @@
 <script setup>
+import Rol from '../components/Rol.vue';
 
 
-import Rol from "../components/Rol.vue";
-    </script>
+
+</script>
     
-    <template>
-           <main>
-            <Rol />
-        </main>
-    </template>
-    
-    <style scoped>
-    
-    </style>
-    
+<template>
+        <main>
+        <Rol />
+    </main>
+</template>
+
+<style scoped>
+
+</style>

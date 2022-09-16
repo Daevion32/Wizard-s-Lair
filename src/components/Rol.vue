@@ -1,8 +1,7 @@
 <script setup>
-import { RouterLink } from 'vue-router';
 import IconsFavorite from './icons/IconsFavorite.vue';
 import IconShopping from './icons/IconShopping.vue';
-import IconCart from './icons/IconCart.vue';
+
     
 </script>
 <template>

@@ -1,5 +1,5 @@
 <script setup>
-  
+
 
 import Favorites from "../components/Favorites.vue"
 
@@ -7,10 +7,10 @@ import Favorites from "../components/Favorites.vue"
 
 
 <template>
-  
+
     <main>
         <Favorites />
-     </main>
+    </main>
 </template>
 
 <style>

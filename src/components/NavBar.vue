@@ -22,7 +22,7 @@ import { RouterLink } from "vue-router";
                 <RouterLink to="/rol"><IconDice /><p class="btn btn-transparent">RolBooks</p></RouterLink>
             </div>      
         </div>
-         
+        
 
 
 
@@ -51,10 +51,9 @@ import { RouterLink } from "vue-router";
     left:4vw;
     
 }
-.Home p{
-    color:white;
 
-}
+
+
 .Views{
     display: flex;
     flex-direction: row;
@@ -64,10 +63,12 @@ import { RouterLink } from "vue-router";
     position: absolute;
     right:3vw;
     top:2vh;
+    text-align:center;
     
 }
-.Views p{
+.btn-transparent{
     color:white;
+
     
 }
 </style>
