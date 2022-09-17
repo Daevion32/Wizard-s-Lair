@@ -11,8 +11,8 @@
 <style scoped>
 
   img{
-    height: 70px;
-    width: 70px;
+    height: 3vw;
+    width: 3vw;
     
   }
 </style>

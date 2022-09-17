@@ -37,7 +37,7 @@ import { RouterLink } from "vue-router";
 
     height: 16vh;
     width: 100vw;
-    background-color: rgba(64, 2, 2, 0.405);
+    background-color: rgba(192, 7, 7, 0.673);
 
 
 }
@@ -58,7 +58,7 @@ import { RouterLink } from "vue-router";
     display: flex;
     flex-direction: row;
     justify-content:flex-end ;
-    gap:5vw;
+    gap:3vw;
     align-items: center;
     position: absolute;
     right:3vw;
