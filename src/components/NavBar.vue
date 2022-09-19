@@ -4,7 +4,10 @@ import IconWizard from "./icons/IconWizard.vue";
 import IconBooks from "./icons/IconBooks.vue";
 import IconDice from "./icons/IconDice.vue";
 import IconFavorites from "./icons/IconFavorites.vue";
+import IconNewBook from "./icons/IconNewBook.vue";
 import { RouterLink } from "vue-router";
+
+
 </script>
 <template>
         <div class="nav">
@@ -13,7 +16,7 @@ import { RouterLink } from "vue-router";
             </div>
             
             <div class="Views">
-                <RouterLink to="/newBook"><p class="btn btn-transparent">NewBook</p></RouterLink>
+                <RouterLink to="/newBook"><IconNewBook /><p class="btn btn-transparent">NewBook</p></RouterLink>
                 <RouterLink to="/cart"><IconCart /><p class="btn btn-transparent">Cart</p></RouterLink>
 
                 <RouterLink to="/favorites"><IconFavorites /><p class="btn btn-transparent">Favorites</p></RouterLink>
