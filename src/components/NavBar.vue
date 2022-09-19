@@ -11,9 +11,10 @@ import { RouterLink } from "vue-router";
             <div class="Home">
                 <RouterLink to="/"><IconWizard /><p class="btn btn-transparent">Home</p></RouterLink>
             </div>
-               
+            
             <div class="Views">
-                <RouterLink to="/cart"><IconCart /><p class="btn btn-transparent" >Cart</p></RouterLink>
+                <RouterLink to="/newBook"><p class="btn btn-transparent">NewBook</p></RouterLink>
+                <RouterLink to="/cart"><IconCart /><p class="btn btn-transparent">Cart</p></RouterLink>
 
                 <RouterLink to="/favorites"><IconFavorites /><p class="btn btn-transparent">Favorites</p></RouterLink>
 
@@ -46,7 +47,7 @@ import { RouterLink } from "vue-router";
     display: flex;
     flex-direction: row;
     position:absolute;
-    align-items: center;
+    text-align: center;
     top:3vh;
     left:4vw;
     

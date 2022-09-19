@@ -12,5 +12,6 @@
   img{
     height: 3vw;
     width: 3vw;
+    top:0.3vw;
 }
 </style>

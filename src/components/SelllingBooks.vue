@@ -8,7 +8,7 @@ import IconTop from "./icons/IconTop.vue";
 
 <template>
     <div class="sellingBooks">
-        <div class="iconTop"> <IconTop /></div>
+        <div class="iconTop"><IconTop /></div>
             <p>Top Ventas</p>
         
         <ol  class="Top">
@@ -25,7 +25,7 @@ import IconTop from "./icons/IconTop.vue";
     .sellingBooks{
         height: 70vh;
         width: 20vw;
-        background-color: green;
+        background-color: rgba(0, 128, 45, 0.384);
         position:absolute;
         top:4vh;
         left:3vw;

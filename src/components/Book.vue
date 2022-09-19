@@ -3,6 +3,8 @@ import IconsFavorite from './icons/IconsFavorite.vue';
 import IconShopping from './icons/IconShopping.vue';
 import IconCoin from './icons/IconCoin.vue';
 
+import IconFavorites from './icons/IconFavorites.vue';
+
 
 
     
@@ -17,9 +19,11 @@ import IconCoin from './icons/IconCoin.vue';
                 <a class="btn btn-transparent"><IconCoin />10,95€</a>
                 <a class="btn btn-transparent"><IconShopping />Compra</a>
                 <a class="btn btn-transparent"><IconsFavorite />Favoritos</a>
+              
             </div>
         </div>
     </div>
+    
 
 
 
