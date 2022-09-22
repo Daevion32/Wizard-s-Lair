@@ -15,8 +15,10 @@
 img{
     height: 2vw;
     width: 2vw;
-    right:1vw;
+    left:37.5vw;
+    top:2.58vw;
     position:absolute;
+    
     
 
 

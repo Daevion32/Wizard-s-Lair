@@ -14,8 +14,6 @@ import SelllingBooks from './SelllingBooks.vue';
     <SelllingBooks />
 
 
-    <Search />
-    
 
   
     <Book />

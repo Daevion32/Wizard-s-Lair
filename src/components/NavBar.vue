@@ -6,6 +6,7 @@ import IconDice from "./icons/IconDice.vue";
 import IconFavorites from "./icons/IconFavorites.vue";
 import IconNewBook from "./icons/IconNewBook.vue";
 import { RouterLink } from "vue-router";
+import Search from "./Search.vue";
 
 
 </script>
@@ -14,7 +15,9 @@ import { RouterLink } from "vue-router";
             <div class="Home">
                 <RouterLink to="/"><IconWizard /><p class="btn btn-transparent">Home</p></RouterLink>
             </div>
-            
+
+            <h1>WIZARD'S LAIR</h1>
+            <Search />
             <div class="Views">
                 <RouterLink to="/newBook"><IconNewBook /><p class="btn btn-transparent">NewBook</p></RouterLink>
                 <RouterLink to="/cart"><IconCart /><p class="btn btn-transparent">Cart</p></RouterLink>
@@ -55,7 +58,12 @@ import { RouterLink } from "vue-router";
     left:4vw;
     
 }
-
+h1{
+    left:200px;
+    top:40px;
+    font-size: 45px;
+    color:white;
+}
 
 
 .Views{

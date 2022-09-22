@@ -6,22 +6,26 @@ import IconSearch from "./icons/IconSearch.vue";
 
 
 <template>
-    <div class="search">
+    
+        <input class="search">
         <IconSearch />
+   
+   
 
-    </div>
+    
 
 </template>
 
 <style scoped>
 .search{
-    height:2vw;
-    width:20vw;
+    height:2.4vw;
+    width:25vw;
     position:absolute;
     background-color:white;
-    left:40vw;
+    left:32vw;
     border-radius: 2vw;
-    margin-top: 1vw;
+    margin-top: 2.4vw;
+    text-align: center;
     
 }
 
