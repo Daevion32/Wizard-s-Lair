@@ -2,8 +2,9 @@
   
 
 import Book from './Book.vue';
-import Search from './Search.vue';
+
 import SelllingBooks from './SelllingBooks.vue';
+import Carrousel from './Carrousel.vue';
   
   
   
@@ -11,9 +12,9 @@ import SelllingBooks from './SelllingBooks.vue';
 </script>
 <template>
 
-    <SelllingBooks />
+    <!-- <SelllingBooks /> -->
 
-
+    <Carrousel />
 
   
     <Book />

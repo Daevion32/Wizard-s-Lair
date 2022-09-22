@@ -23,10 +23,10 @@ import IconSearch from "./icons/IconSearch.vue";
     position:absolute;
     background-color:white;
     left:32vw;
-    border-radius: 2vw;
     margin-top: 2.4vw;
     text-align: center;
-    
+    border-radius: 2vw;
+    border-color: transparent;
 }
 
 </style>

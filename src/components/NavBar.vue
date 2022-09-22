@@ -70,7 +70,7 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content:flex-end ;
-    gap:3vw;
+    gap:2.2vw;
     align-items: center;
     position: absolute;
     right:3vw;
