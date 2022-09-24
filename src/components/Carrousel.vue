@@ -7,15 +7,13 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active ">
-            <img src="../assets/978184154964.webp" class="w-50 " alt="Carrusel1">
-            <img src="../assets/978184154964.webp" class="w-50" alt="Carrusel2">
-            <img src="../assets/978184154964.webp" class="w-50" alt="Carrusel3">
+            <img src="../assets/978184154964.webp" class="w-100 " alt="Carrusel1">
             </div>
             <div class="carousel-item">
-            <img src="../assets/978184154964.webp" class="d-block w-50" alt="Carrusel2">
+            <img src="../assets/978184154964.webp" class="d-block w-100" alt="Carrusel2">
             </div>
             <div class="carousel-item">
-            <img src="../../assets/bookshelf.png" class="d-block w-50" alt="Carrusel3">
+            <img src="../assets/978184154964.webp" class="d-block w-100" alt="Carrusel3">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
