@@ -1,14 +1,10 @@
 <script setup>
-  
 
+import Carrousel from './Carrousel.vue';
 import Book from './Book.vue';
 
-import SelllingBooks from './SelllingBooks.vue';
-import Carrousel from './Carrousel.vue';
-  
-  
-  
-      
+
+
 </script>
 <template>
 
@@ -16,8 +12,8 @@ import Carrousel from './Carrousel.vue';
 
     <Carrousel />
 
-  
-    <Book />
+  <Book />
+ 
  
   
 </template>

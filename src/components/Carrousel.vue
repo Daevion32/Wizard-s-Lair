@@ -29,9 +29,5 @@
 </template>
 
 <style scoped>
-    .carousel-inner{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    
 </style>
