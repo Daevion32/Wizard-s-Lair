@@ -22,7 +22,7 @@ onMounted(async() => {
         <img :src="Book.image" alt="libro warhammer">
         <div class="card-body">
             <h3 class="card-title">{{Book.name}}</h3>   
-            <p class="card-text">{{Book.text}}</p>
+            <p class="card-text">{{Book.description}}</p>
             <p class ="card-text">{{Book.reference}}</p>
             <p class ="card-text">{{Book.category}}</p>
             <div class="buttons">

@@ -24,8 +24,9 @@ export const BookService ={
                 .filter(book =>book.isFavorite === true));
             return favBook;
         },
-        postNewBook(){
-            const createBook = axios.post(baseURL + "/book/createBook/").then(res => res.data);
+        postNewBook(data){
+            const createBook = axios.post(baseURL + "/book/", data).then(res => res.data);
+            
             return createBook;
         },
         updateBook(id, data){

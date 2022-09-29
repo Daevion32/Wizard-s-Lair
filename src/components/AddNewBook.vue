@@ -7,20 +7,25 @@ const newBook = ref({
   description: "",
   image: "",
   category:"",
-  price:"",
   reference:"",
+  price:"",
+  buyable:false,
+  favorite:false,
+ 
   
 });
 
 const handleSubmit = (e) => {
   e.preventDefault();
- newBook.value = BookService.postNewBook();
+
+BookService.postNewBook(newBook.value);
+
 };
 
 </script>
 <template>
-        <form class="form-group">
-                <div clas="form-container"  @submit="handleSubmit">
+        <form class="form-group" @submit="handleSubmit">
+                <div clas="form-container"  >
                         <label for="exampleTitle">Nombre</label>
                         <input type="text" class="form-control" placeholder="Nombre" v-model="newBook.name" required/>
                         <label for="exampleTitle">Descripcion</label>
@@ -37,7 +42,7 @@ const handleSubmit = (e) => {
 
                 </div>
                         <button type="submit" class="btn btn-primary">Aceptar</button>
-                        <RouterLink to="/"><button class="btn btn-primary">Cancelar</button> </RouterLink>
+                       <button type="submit" class="btn btn-primary"  @click="$router.go(-1)">Cancelar</button>
         </form>
         
 </template>

@@ -8,8 +8,6 @@ import Book from './Book.vue';
 </script>
 <template>
 
-    <!-- <SelllingBooks /> -->
-
     <Carrousel />
 
     <Book />
