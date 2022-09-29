@@ -21,7 +21,7 @@ onMounted(async() => {
     <div class="card" v-for="Book in BookData">
         <img :src="Book.image" alt="libro warhammer">
         <div class="card-body">
-            <h3 class="card-title">{{Book.name}}</h3>
+            <h3 class="card-title">{{Book.name}}</h3>   
             <p class="card-text">{{Book.text}}</p>
             <p class ="card-text">{{Book.reference}}</p>
             <p class ="card-text">{{Book.category}}</p>
@@ -56,32 +56,32 @@ onMounted(async() => {
     
 
 }
-    img{
-        height: 26vh;
-        width: 14vw;
-        margin:0.5vh;
-    }
-    h3{
-        text-align: center;
-        font-size:larger;
-        
-    }
-    .buttons{
-        height: 8vh;
-        width: 8vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        right:2vw;
-        gap:2vw;
-        top:2.2vw;
-        text-align: center;
-        justify-content: center;
-        color:white;
-    }
-    .buttons .btn{
-      color:white;
-    }
+img{
+    height: 26vh;
+    width: 10vw;
+    margin:0.5vh;
+}
+h3{
+    text-align: center;
+    font-size:larger;
+    
+}
+.buttons{
+    height: 8vh;
+    width: 8vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left:2vw;
+    gap:2vw;
+    top:2.2vw;
+    text-align: center;
+    justify-content: center;
+    color:white;
+}
+.buttons .btn{
+    color:white;
+}
 
 
 </style>

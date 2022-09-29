@@ -24,10 +24,17 @@ export const BookService ={
                 .filter(book =>book.isFavorite === true));
             return favBook;
         },
-
+        postNewBook(){
+            const createBook = axios.post(baseURL + "/book/createBook/").then(res => res.data);
+            return createBook;
+        },
         updateBook(id, data){
             const updateBook = axios.get(baseURL + `/book/${id}`, data).then(res => res.data);
             return updateBook;        
         },
+        storeBook(){
+            const editBook = axios.put(baseURL + "/book/storeBook/").then(res => res.data);
+            return editBook;
+        }
 
 }

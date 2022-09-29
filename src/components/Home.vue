@@ -12,7 +12,7 @@ import Book from './Book.vue';
 
     <Carrousel />
 
-  <Book />
+    <Book />
  
  
   

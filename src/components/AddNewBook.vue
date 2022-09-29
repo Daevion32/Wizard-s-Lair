@@ -1,27 +1,46 @@
 <script setup>
+import { BookService } from '../data_Api/wizardService';
+import { ref } from 'vue';
+
+const newBook = ref({
+  name: "",
+  description: "",
+  image: "",
+  category:"",
+  price:"",
+  reference:"",
+  
+});
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+ newBook.value = BookService.postNewBook();
+
+  router.go(-1);
+};
 
 </script>
 <template>
-        <div class="form-group">
-                <div clas="form-container">
-                        <label for="exampleTitle">Titulo</label>
-                        <input type="text" class="form-control" placeholder="Titulo"/>
+        <form class="form-group">
+                <div clas="form-container"  @submit="handleSubmit">
                         <label for="exampleTitle">Nombre</label>
-                        <input type="text" class="form-control" placeholder="Nombre"/>
+                        <input type="text" class="form-control" placeholder="Nombre" v-model="newBook.name" required/>
                         <label for="exampleTitle">Descripcion</label>
-                        <input type="text" class="form-control" placeholder="Descripción"/>
+                        <input type="text" class="form-control" placeholder="Descripcion" v-model="newBook.description" required/>
                         <label for="exampleTitle">Imagen</label>
-                        <input type="text" class="form-control" placeholder="Imagen"/>
+                        <input type="text" class="form-control" placeholder="Imagen" v-model="newBook.image" required />
+                        <label for="exampleTitle">Categoria</label>
+                        <input type="text" class="form-control" placeholder="Categoria" v-model="newBook.category" required />
                         <label for="exampleTitle">Numero de referencia</label>
-                        <input type="text" class="form-control" placeholder="Referencia"/>
+                        <input type="text" class="form-control" placeholder="Referencia" v-model="newBook.reference" required />
                         <label for="exampleTitle">Precio</label>
-                        <input type="text" class="form-control" placeholder="Precio"/>
+                        <input type="text" class="form-control" placeholder="Precio" v-model="newBook.price" required />
                         
 
                 </div>
-                        <button class="btn btn-primary">Aceptar</button>
-                        <button class="btn btn-primary">Cancelar</button> 
-        </div>
+                        <button type="submit" class="btn btn-primary">Aceptar</button>
+                        <RouterLink to="/"><button class="btn btn-primary">Cancelar</button> </RouterLink>
+        </form>
         
 </template>
 <style scoped>
