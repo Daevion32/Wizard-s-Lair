@@ -47,8 +47,6 @@ onMounted(async() => {
     flex-direction: row;
     height: 45vh;
     width: 28vw;
-    left:30vw;
-    top:4vw;
     background-color: hwb(0 11% 25% / 0.319);
     color:rgb(0, 0, 0);    
     border-radius: 1vw;

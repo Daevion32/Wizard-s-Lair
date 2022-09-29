@@ -29,6 +29,15 @@
 </template>
 
 <style scoped>
- 
-    
+
+    .carousel_slide{
+        width: 90vw;
+        left:10vw;
+    }
+   .carousel-inner{
+    height: 20vw;
+    width: 12vw;
+    left:40vw;
+   }
+
 </style>

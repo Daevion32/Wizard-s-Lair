@@ -7,10 +7,14 @@ import Book from './Book.vue';
 
 </script>
 <template>
-
-    <Carrousel />
-
-    <Book />
+    <div >
+        <Carrousel />
+    </div>
+    
+    <div class="GridBook">
+        <Book />
+    </div>
+   
  
  
   
@@ -18,6 +22,12 @@ import Book from './Book.vue';
    
   
 <style scoped>
-
+    .GridBook{
+        left:90px;
+        display: grid;
+        grid-template-columns: repeat(3, 560px [col-start]);
+        row-gap: 50px;
+        column-gap: 50px;
+    }
 
 </style>
