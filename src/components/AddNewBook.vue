@@ -15,8 +15,6 @@ const newBook = ref({
 const handleSubmit = (e) => {
   e.preventDefault();
  newBook.value = BookService.postNewBook();
-
-  router.go(-1);
 };
 
 </script>
