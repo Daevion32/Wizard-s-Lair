@@ -41,14 +41,16 @@ BookService.postNewBook(newBook.value);
                         
 
                 </div>
+                            
                         <button type="submit" class="btn btn-primary">Aceptar</button>
-                       <button type="submit" class="btn btn-primary"  @click="$router.go(-1)">Cancelar</button>
+                        <button type="submit" class="btn btn-primary"  @click="$router.go(-1)">Cancelar</button>
+                       
         </form>
-        
+               
 </template>
 <style scoped>
         .form-group{
-                height: 90vw;
+                height: 40vw;
                 width:80vw;
                 margin-top: 2vw;
                 margin-left: 8vw;

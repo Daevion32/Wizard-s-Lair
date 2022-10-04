@@ -29,13 +29,10 @@ export const BookService ={
             
             return createBook;
         },
-        updateBook(id, data){
-            const updateBook = axios.get(baseURL + `/book/${id}`, data).then(res => res.data);
+        updateBook(data){
+            const updateBook = axios.put(baseURL + `/book/edit`, data).then(res => res.data);
             return updateBook;        
         },
-        storeBook(){
-            const editBook = axios.put(baseURL + "/book/").then(res => res.data);
-            return editBook;
-        }
+   
         
 }

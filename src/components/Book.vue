@@ -29,6 +29,7 @@ onMounted(async() => {
                 <a class="btn btn-transparent"><IconCoin />{{Book.price}}</a>
                 <a class="btn btn-transparent"><IconShopping />{{Book.buyable}}</a>
                 <a class="btn btn-transparent"><IconsFavorite />{{Book.favorite}}</a>
+                <RouterLink to="editBook" ><button type="submit" class="btn btn-transparent">Editar</button></RouterLink> 
               
             </div>
         </div>
