@@ -1,10 +1,14 @@
 <script setup>
 import EditBook from '../components/EditBook.vue';
 
+const props = defineProps({
+        id : String,
+})
+
 </script>
 <template>
     <div>
-        <EditBook />
+        <EditBook :id="id" />
     </div>
 </template>
 

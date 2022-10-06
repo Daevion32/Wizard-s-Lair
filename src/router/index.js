@@ -38,9 +38,10 @@ const router = createRouter({
       component:() => import("../views/NewBookView.vue")
     },
     {
-      path: "/editBook",
+      path: "/editBook/:id",
       name: "editBook",
-      component:() => import("../views/EditBookView.vue")
+      component:() => import("../views/EditBookView.vue"),
+      props: true,
     },
     
   ],

@@ -6,7 +6,7 @@ import Home from '../components/Home.vue';
 <template>
 
     <main>
-        <div id="home">
+        <div class="home">
            <Home />
           
         </div>
@@ -23,10 +23,7 @@ import Home from '../components/Home.vue';
         left:3vw;
 
     }
-    .home{
-        display: flex;
-        flex-direction: row;
-    }
+
     
 
 </style>
