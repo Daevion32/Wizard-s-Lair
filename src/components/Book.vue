@@ -58,7 +58,7 @@ onMounted(async() => {
 img{
     height: 26vh;
     width: 10vw;
-    margin:0.5vh;
+    margin:1vw;
 }
 h3{
     text-align: center;

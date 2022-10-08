@@ -6,99 +6,102 @@ import router from "@/router";
 
 
 const props = defineProps({
-        id : String,
+        id: String,
 })
 let books = [];
 
 const editBook = ref({
-id:props.id,      
-name:"",
-description: "",
-image:  "",
-category: "",
-reference: "",
-price: "",
-buyable:false,
-favorite:false,
+        id: props.id,
+        name: "",
+        description: "",
+        image: "",
+        category: "",
+        reference: "",
+        price: "",
+        buyable: false,
+        favorite: false,
 });
 
 
-onMounted(async() => {
-books.value = await BookService.getBookById(props.id);
-editBook.value.name = books.value.name;
-editBook.value.description = books.value.description;
-editBook.value.image = books.value.image;
-editBook.value.category = books.value.category;
-editBook.value.reference = books.value.reference;
-editBook.value.price = books.value.price;
+onMounted(async () => {
+        books.value = await BookService.getBookById(props.id);
+        editBook.value.name = books.value.name;
+        editBook.value.description = books.value.description;
+        editBook.value.image = books.value.image;
+        editBook.value.category = books.value.category;
+        editBook.value.reference = books.value.reference;
+        editBook.value.price = books.value.price;
 
 });
 
-const savedata = (event)=>{
+const savedata =async (event) =>{
         event.preventDefault();
-        BookService.updateBook(editBook.value.id , editBook);
-        router.push({name:"home"});      
-}
+        await BookService.updateBook(editBook.value);
+        router.push( "/" );
+};
 
 </script>
 <template>
-        <form class="form-group" @submit="savedata" >
-                <div clas="form-container"  >
+        <form class="form-group" @submit="savedata">
+                <div clas="form-container">
                         <label for="exampleTitle">Nombre</label>
                         <input type="text" class="form-control" placeholder="Nombre" v-model="editBook.name" />
                         <label for="exampleTitle">Descripcion</label>
-                        <input type="text" class="form-control" placeholder="Descripcion"  v-model="editBook.description" />
+                        <input type="text" class="form-control" placeholder="Descripcion"
+                                v-model="editBook.description" />
                         <label for="exampleTitle">Imagen</label>
-                        <input type="text" class="form-control" placeholder="Imagen"  v-model="editBook.image"  />
+                        <input type="text" class="form-control" placeholder="Imagen" v-model="editBook.image" />
                         <label for="exampleTitle">Categoria</label>
-                        <input type="text" class="form-control" placeholder="Categoria"  v-model="editBook.category"  />
+                        <input type="text" class="form-control" placeholder="Categoria" v-model="editBook.category" />
                         <label for="exampleTitle">Numero de referencia</label>
-                        <input type="text" class="form-control" placeholder="Referencia" v-model="editBook.reference"   />
+                        <input type="text" class="form-control" placeholder="Referencia" v-model="editBook.reference" />
                         <label for="exampleTitle">Precio</label>
-                        <input type="text" class="form-control" placeholder="Precio"  v-model="editBook.price"  />
+                        <input type="text" class="form-control" placeholder="Precio" v-model="editBook.price" />
                 </div>
-                        
-                        <button type="submit" class="btn btn-primary" >Aceptar</button>
-                        <button type="button" class="btn btn-primary" @click ="router.go(-1)">Cancelar</button>
-                        
+
+                <button type="submit" class="btn btn-primary">Aceptar</button>
+                <button type="button" class="btn btn-primary" @click="router.go(-1)">Cancelar</button>
+
         </form>
-        
+
 </template>
 <style scoped>
-        .form-group{
-                height: 40vw;
-                width:80vw;
-                margin-top: 2vw;
-                margin-left: 8vw;
-                text-align: center;
-                background-color: rgba(223, 197, 117, 0.468);
-                position: absolute;
-                
-        }
-        .form-container{
-                height: 55vw;
-                width:40vw;
-                position:relative;
-                
-        }
-        label{
-                margin-top: 1.2vw;
-        }
-        input{
-                width: 40vw;
-                position:relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: 20vw;
-                
-        }
-        
-        
-        button{   
-                margin:1vw;
-                background-color:black ;
-                color:red;
-        }
+.form-group {
+        height: 40vw;
+        width: 80vw;
+        margin-top: 2vw;
+        margin-left: 8vw;
+        text-align: center;
+        background-color: rgba(223, 197, 117, 0.468);
+        position: absolute;
 
+}
+
+.form-container {
+        height: 55vw;
+        width: 40vw;
+        position: relative;
+
+}
+
+label {
+        margin-top: 1.2vw;
+}
+
+input {
+        width: 40vw;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20vw;
+
+}
+
+
+button {
+        margin: 1vw;
+        background-color: black;
+        color: red;
+}
 </style>

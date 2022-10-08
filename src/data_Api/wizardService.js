@@ -25,13 +25,14 @@ export const BookService ={
             return favBook;
         },
         postNewBook(data){
-            const createBook = axios.post(baseURL + "/book/", data).then(res => res.data);
-            
+            const createBook = axios.post(baseURL + "/book/" , data).then(res => res.data);
             return createBook;
         },
-        updateBook(id ,data){
-            const updateBook = axios.put(baseURL + `/book/edit/` + id , data).then(res => res.data);
-            return updateBook;        
+        updateBook(data){
+            
+           
+            const book =  axios.put(baseURL + "/book/edit/" , data).then(res => res.data);
+            return book;        
         },
    
         
