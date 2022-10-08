@@ -79,5 +79,5 @@ main{
   flex-direction: row;
   gap:4vw;
   width: 100vw;
-  height: 100vh;
+  background-color: #ffffff;
 }

@@ -46,15 +46,26 @@ onMounted(async() => {
 .card{
     display: flex;
     flex-direction: row;
-    height: 45vh;
-    width: 28vw;
+    margin: 1%;
+    width: 30%;
     background-color: hwb(0 11% 25% / 0.319);
-    color:rgb(0, 0, 0);    
-    border-radius: 1vw;
-    
-    
-
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
 }
+
+@media(max-width:898px){
+    .card{
+        width: 45%;
+        
+    }
+}
+@media(max-width:600px){
+    .card{
+        width:100%;
+    }
+}
+
+
 img{
     height: 26vh;
     width: 10vw;
@@ -72,7 +83,6 @@ h3{
     flex-direction: row;
     align-items: center;
     left:2vw;
-    gap:2vw;
     top:2.2vw;
     text-align: center;
     justify-content: center;

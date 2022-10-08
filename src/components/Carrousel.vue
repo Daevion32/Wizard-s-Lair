@@ -31,8 +31,9 @@
 <style scoped>
 
     .carousel_slide{
-        width: 90vw;
-        left:10vw;
+        width: 100vw;
+        margin-top: 15px;
+        
     }
    .carousel-inner{
     height: 20vw;

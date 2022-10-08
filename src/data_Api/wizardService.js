@@ -29,8 +29,6 @@ export const BookService ={
             return createBook;
         },
         updateBook(data){
-            
-           
             const book =  axios.put(baseURL + "/book/edit/" , data).then(res => res.data);
             return book;        
         },

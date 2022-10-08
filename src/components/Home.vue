@@ -11,7 +11,7 @@ import Book from './Book.vue';
         <Carrousel />
     </div>
     
-    <div class="GridBook">
+    <div class="flexBook">
         <Book />
     </div>
    
@@ -22,12 +22,11 @@ import Book from './Book.vue';
    
   
 <style scoped>
-    .GridBook{
-        left:90px;
-        display: grid;
-        grid-template-columns: repeat(3, 560px [col-start]);
-        row-gap: 50px;
-        column-gap: 50px;
+    .flexBook{
+        padding:9px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
 </style>
