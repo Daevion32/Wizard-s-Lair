@@ -24,6 +24,7 @@ export const BookService ={
                 .filter(book =>book.isFavorite === true));
             return favBook;
         },
+        
         postNewBook(data){
             const createBook = axios.post(baseURL + "/book/" , data).then(res => res.data);
             return createBook;
@@ -32,6 +33,9 @@ export const BookService ={
             const book =  axios.put(baseURL + "/book/edit/" , data).then(res => res.data);
             return book;        
         },
-   
+        deleteBook(data){
+            const deleteBook = axios.delete(baseURL + "/book/" , data).then(res => res.data);
+            return deleteBook;
+        }
         
 }
